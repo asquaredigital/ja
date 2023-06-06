@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>edukin</title>
+    <title>JCHM</title>
 
     <!-- Mobile Specific Metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,6 +23,16 @@
     <link rel="stylesheet" href="stylesheet/jquery.mCustomScrollbar.min.css">
 
     <link href="icon/favicon.ico" rel="shortcut icon">
+
+    <script src="javascript/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+        $("#header1").load("header.html");
+        $("#footer1").load("footer.html");
+        });
+        </script>
+
 </head>
 <body>
     <div id="loading-overlay">
@@ -45,52 +55,25 @@
                         </div>
                         <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
                             <ul class="nav-sing">
-                                <li><a href="#">Sing In</a></li>
-                                <li><a href="#">Sing Up</a></li>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <header class="header menu-bar header-blog hv-menu-type2">
-                <div class="container"> 
+            <header class="header menu-bar hv-menu-type2">
+                <div class="container">
                     <div class="menu-bar-wrap clearfix">
                         <div id="logo" class="logo">
-                            <a href="index.html"><img src="images/logo/02.png" alt="images"></a>
+                            <a href="index.html"><img src="images/logo/02.png" alt="images" height="160px" width="160px"></a>
                         </div>
                         <div class="mobile-button"><span></span></div>
                         <div class="header-menu">
-                            <nav id="main-nav" class="main-nav">
-                                <ul class="menu">
-                                    <li><a href="#">Home</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="index.html">Home 1</a></li>
-                                            <li class="menu-item"><a href="home2.html">Home 2</a></li>
-                                            <li class="menu-item"><a href="home3.html">Home 3</a></li>
-                                            <li class="menu-item"><a href="home4.html">Home 4</a></li>
-                                            <li class="menu-item"><a href="home5.html">Home 5</a></li>
-                                        </ul><!-- sub-menu -->
-                                    </li>
-                                    <li><a href="#">Course</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item active"><a href="course.html">Course</a></li>
-                                            <li class="menu-item"><a href="course-list.html">Course list</a></li>
-                                            <li class="menu-item"><a href="course-single.html">Course single</a></li>
-                                        </ul><!-- sub-menu -->
-                                    </li>
-                                    <li><a href="#">Explore</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="about.html">About</a></li>
-                                        </ul><!-- sub-menu -->
-                                    </li>
-                                    <li><a href="#">Degrees</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="blog.html">Blog</a></li>
-                                            <li class="menu-item"><a href="blog-single.html">Blog single</a></li>
-                                        </ul><!-- sub-menu -->
-                                    </li>
-                                </ul>
-                            </nav>
+                            <nav id="header1"></nav>
+
                         </div>
                     </div>
                 </div>
@@ -618,12 +601,12 @@
         </div>
     </div><!-- cta-cr -->
 
-    <footer id="footer" class="footer-type1">
+    <footer id="footer" class="footer-type2">
         <div class="form-send-email">
             <div class="container">
                 <form action="#" class="form-send">
                     <input type="search" placeholder="Enter your email...">
-                    <button class="btn send-button bg-clff5f60">
+                    <button class="btn send-button bg-clfbb545" style="background-color: #ac163a;">
                         Send
                     </button>
                 </form>
@@ -634,11 +617,11 @@
                 <div class="row">
                     <div class="col-lg-3 col-footer">
                        <div class="logo-footer">
-                           <img src="images/logo/04.png" alt="images">
+                           <img src="images/logo/02.png" alt="images">
                        </div>
                     </div>
                     <div class="col-lg-2 col-company">
-                        <h3 class="widget widget-title">
+                        <h3 class="widget widget-title text-white">
                             Company
                         </h3>
                         <ul class="widget-nav-menu">
@@ -648,19 +631,19 @@
                         </ul>
                     </div>
                     <div class="col-lg-2 col-link">
-                        <h3 class="widget widget-title">
+                        <h3 class="widget widget-title text-white">
                             Help Links
                         </h3>
                         <ul class="widget-nav-menu">
                             <li><a href="#">Student Support</a></li>
                             <li><a href="#">Course Policy</a></li>
-                            <li><a href="#">Register  Key</a></li>
+                            <li><a href="#">Register Key</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-course">
-                        <h3 class="widget widget-title">
+                        <h3 class="widget widget-title text-white">
                             Course
-                        </h3>
+                        </h3> 
                         <ul class="widget-nav-menu">
                             <li><a href="#">Wordpres</a></li>
                             <li><a href="#">Photography</a></li>
@@ -668,7 +651,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-2 col-media">
-                        <h3 class="widget widget-title">
+                        <h3 class="widget widget-title text-white">
                             Social Media
                         </h3>
                         <ul class="widget-social-media">
@@ -681,18 +664,18 @@
                 </div>
             </div>
         </div>
-        <div id="bottom" class="bottom-type1 clearfix has-spacer">
+        <div id="bottom" class="bottom-type2 clearfix has-spacer">
             <div id="bottom-bar-inner" class="container">
                 <div class="bottom-bar-inner-wrap">
                     <div class="bottom-bar-content">
                         <div id="copyright">
                             © 
                             <span class="text-year">
-                                2018
+                                2023
                             </span>
-                            <span class="text-name">
-                                Roy Design.
-                            </span>
+                            <a href="https://www.asquare.tech">  
+                            <span class="text-name">     Asquare Digital Solutions. 
+                            </span></a>
                             <span class="license">
                                 <a href="#">All Rights Reserved</a>
                             </span>

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>JCHM</title>
 
     <!-- Mobile Specific Metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <!-- Bootstrap-->
     <link rel="stylesheet" href="stylesheet/bootstrap.css">
 
     <!-- Template Style-->
-    <link rel="stylesheet" href="stylesheet/font-awesome.css"> 
+    <link rel="stylesheet" href="stylesheet/font-awesome.css">
     <link rel="stylesheet" href="stylesheet/animate.css">
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/shortcodes.css">
@@ -21,53 +22,84 @@
     <link rel="stylesheet" href="stylesheet/owl.theme.default.min.css">
     <link rel="stylesheet" href="stylesheet/owl.carousel.min.css">
     <link rel="stylesheet" href="stylesheet/jquery.mCustomScrollbar.min.css">
-    
+
     <link href="icon/favicon.ico" rel="shortcut icon">
     <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+        $("#header1").load("header.html");
+        $("#footer1").load("footer.html");
+        });
+        </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 
     <style>
         .faq-section {
-  max-width: 800px;
-  margin: 0 auto;
-}
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-.faq-item {
-  margin-bottom: 20px;
-}
+        .faq-item {
+            margin-bottom: 20px;
+        }
 
-.faq-question {
-  font-weight: bold;
-  cursor: pointer;
-  color: black;
-}
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            color: black;
+        }
 
-.faq-answer {
-    color:#333333;
-  display: none;
-}
+        .faq-answer {
+            color: #333333;
+            display: none;
+        }
 
-@media (max-width: 768px) {
-  .faq-question {
-    font-size: 18px;
-  }
-}
+        @media (max-width: 768px) {
+            .faq-question {
+                font-size: 18px;
+            }
+        }
 
-@media (max-width: 480px) {
-  .faq-question {
-    font-size: 16px;
-  }
-}
+        @media (max-width: 480px) {
+            .faq-question {
+                font-size: 16px;
+            }
+        }
 
+        a {
+            text-decoration: none;
+        }
     </style>
 
     <script>
-        $(document).ready(function() {
-  $('.faq-question').click(function() {
-    $(this).next('.faq-answer').slideToggle();
-  });
-});
+        $(document).ready(function () {
+            $('.faq-question').click(function () {
+                $(this).next('.faq-answer').slideToggle();
+            });
+        });
     </script>
+
+    <style>
+        .accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #fff;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+button:hover {
+    color: #fff;
+    background: #ac163a;
+}
+    </style>
 </head>
+
 <body>
     <div id="loading-overlay">
         <div class="loader"></div>
@@ -90,15 +122,15 @@
                         <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
                             <ul class="nav-sing">
                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <header class="header menu-bar header-blog hv-menu-type2">
+            <header class="header menu-bar hv-menu-type2">
                 <div class="container">
                     <div class="menu-bar-wrap clearfix">
                         <div id="logo" class="logo">
@@ -106,30 +138,8 @@
                         </div>
                         <div class="mobile-button"><span></span></div>
                         <div class="header-menu">
-                            <nav id="main-nav" class="main-nav">
-                                <ul class="menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                            
-                                    <li><a href="course.html">Courses</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="course.html">Course</a></li>
-                                            <li class="menu-item"><a href="course-list.html">Course list</a></li>
-                                            <li class="menu-item"><a href="course-single.html">Course single</a></li>
-                                        </ul><!-- sub-menu -->
-                                    </li>
-                                    <li><a href="index.html">Placement</a></li>
-                                    <li><a href="index.html">Events</a></li>
-                                    <li><a href="index.html">Gallery</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
+                            <nav id="header1"></nav>
 
-                                    <li><a href="index.html">Contact</a></li>
-                            
-                            
-                                    
-                                   
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -153,63 +163,208 @@
             </div>
         </div>
     </div><!-- bg-header -->
-    
-    <div class="faq-section">
+
+    <!-- <div class="faq-section">
         <h1 style="color: black;font-size: 30px;"><b>Frequently Asked Questions</b></h1>
         <p>(Click the Questions to view the Answer)</p><br>
         <div class="faq-item">
-          <h3 class="faq-question">Q: What are the career prospects after completing this course?</h3>
-          <div class="faq-answer">
-            <p style="text-align: justify;"> <br>A: After completing the course, the candidate can expect a range of career prospects in the hospitality industry. Some potential career paths include Hotel operational trainee or as individual department employee, Management trainee and as On  the job trainee. If the student's communication and quantum of technical knowledge and skill is commendable, then the hotels can absorb the student as a team leader in any one of the 4 major departments whichever the student specializes.
+            <h3 class="faq-question">Q: What are the career prospects after completing this course?</h3>
+            <div class="faq-answer">
+                <p style="text-align: justify;"> <br>A: After completing the course, the candidate can expect a range of
+                    career prospects in the hospitality industry. Some potential career paths include Hotel operational
+                    trainee or as individual department employee, Management trainee and as On the job trainee. If the
+                    student's communication and quantum of technical knowledge and skill is commendable, then the hotels
+                    can absorb the student as a team leader in any one of the 4 major departments whichever the student
+                    specializes.
 
-                With a hotel management background, the student could specialize in event planning and coordination, organizing conferences, weddings, meetings, and other special events within hotels or event management companies.
-                
-                The student would focus on promoting the hotel's services, attracting new customers, managing client relationships, developing marketing strategies, and driving revenue through sales efforts.
-                
-                The student could become a revenue manager and would analyze market trends, set pricing strategies, manage inventory and distribution channels, and optimize revenue for the hotel by maximizing room rates and occupancy.
-                
-                With experience and expertise in hotel management, the student could work as a consultant, providing advisory services to hotels, resorts, or hospitality organizations, offering guidance on operations, efficiency, profitability, and guest satisfaction.
-                
-                Armed with knowledge of hotel management, the student may consider starting the student's own hotel or hospitality-related businesses, such as a boutique hotel, bed and breakfast, or a specialized service within the industry.
-                
-                These are just a few examples of the career prospects available after completing a hotel management course. The hospitality industry offers diverse opportunities for growth, and with experience and continuous learning, the student can progress into higher-level management positions or explore other areas of the industry
-                
+                    With a hotel management background, the student could specialize in event planning and coordination,
+                    organizing conferences, weddings, meetings, and other special events within hotels or event
+                    management companies.
 
+                    The student would focus on promoting the hotel's services, attracting new customers, managing client
+                    relationships, developing marketing strategies, and driving revenue through sales efforts.
 
-            </p>
-          </div>
-          <br>
-          <h3 class="faq-question">Q: What Is the qualification and duration required for the BSc., in catering and hotel administration degree program?</h3>
-          <div class="faq-answer">
-            <p style="text-align: justify;"> <br>
-                The course is a three-year bachelor's degree programme divided into 6 semesters offered by The Alagappa University. During this time, the students learn communication and culinary skills, as well as other abilities required in the hotel management industry, such as food service, Front office operations, and  housekeeping. In the final semester the student is destined to 100 days of Industrial Exposure Training or On the Job Training. The Hotel will study the skills of the student during the period of training and absorb him for a suitable job of his qualities.
-The qualification required to pursue this program is 10 +2 pass. This Hotel Management course is the best because, with this course in hotel management the student can appear for any Government public examinations. 
+                    The student could become a revenue manager and would analyze market trends, set pricing strategies,
+                    manage inventory and distribution channels, and optimize revenue for the hotel by maximizing room
+                    rates and occupancy.
 
+                    With experience and expertise in hotel management, the student could work as a consultant, providing
+                    advisory services to hotels, resorts, or hospitality organizations, offering guidance on operations,
+                    efficiency, profitability, and guest satisfaction.
 
+                    Armed with knowledge of hotel management, the student may consider starting the student's own hotel
+                    or hospitality-related businesses, such as a boutique hotel, bed and breakfast, or a specialized
+                    service within the industry.
 
-
-            </p>
-          </div>
-          <br>
-          <h3 class="faq-question">Q: What Is the qualification and duration required for the Diploma in catering and hotel administration degree program?</h3>
-          <div class="faq-answer">
-            <p style="text-align: justify;"> <br>The course is a three-year Diploma programme divided into 6 semesters offered by The Alagappa University. During this time, the students learn the technical skills required for the operations like food production, food & beverage service, Housekeeping, and Front office. The qualification required to pursue this program is 10th pass. The candidate who wishes to acquire a hotel management diploma can make it real choice. 
-                In the final semester the student is destined to 100 days of Industrial Exposure Training or On the Job Training. The Hotel will study the skills of the student during the period of training and absorb him for a suitable job of his qualities. Any Diploma courses, that is Diploma in Hotel management should have three years of program and should impart technical skills to the students for all the 3years.  
-                
-                
+                    These are just a few examples of the career prospects available after completing a hotel management
+                    course. The hospitality industry offers diverse opportunities for growth, and with experience and
+                    continuous learning, the student can progress into higher-level management positions or explore
+                    other areas of the industry
 
 
-            </p>
-          </div>
-          
+
+                </p>
+            </div>
+            <br>
+            <h3 class="faq-question">Q: What Is the qualification and duration required for the BSc., in catering and
+                hotel administration degree program?</h3>
+            <div class="faq-answer">
+                <p style="text-align: justify;"> <br>
+                    The course is a three-year bachelor's degree programme divided into 6 semesters offered by The
+                    Alagappa University. During this time, the students learn communication and culinary skills, as well
+                    as other abilities required in the hotel management industry, such as food service, Front office
+                    operations, and housekeeping. In the final semester the student is destined to 100 days of
+                    Industrial Exposure Training or On the Job Training. The Hotel will study the skills of the student
+                    during the period of training and absorb him for a suitable job of his qualities.
+                    The qualification required to pursue this program is 10 +2 pass. This Hotel Management course is the
+                    best because, with this course in hotel management the student can appear for any Government public
+                    examinations.
+
+
+
+
+                </p>
+            </div>
+            <br>
+            <h3 class="faq-question">Q: What Is the qualification and duration required for the Diploma in catering and
+                hotel administration degree program?</h3>
+            <div class="faq-answer">
+                <p style="text-align: justify;"> <br>The course is a three-year Diploma programme divided into 6
+                    semesters offered by The Alagappa University. During this time, the students learn the technical
+                    skills required for the operations like food production, food & beverage service, Housekeeping, and
+                    Front office. The qualification required to pursue this program is 10th pass. The candidate who
+                    wishes to acquire a hotel management diploma can make it real choice.
+                    In the final semester the student is destined to 100 days of Industrial Exposure Training or On the
+                    Job Training. The Hotel will study the skills of the student during the period of training and
+                    absorb him for a suitable job of his qualities. Any Diploma courses, that is Diploma in Hotel
+                    management should have three years of program and should impart technical skills to the students for
+                    all the 3years.
+
+
+
+
+                </p>
+            </div>
+
         </div>
-      
-        <!-- Add more FAQ items as needed -->
-      </div>
-      
-    
-    
-    
+
+    </div> -->
+
+
+
+    <div class="faq-section my-5">
+        <h1 style="color: black;font-size: 30px;"><b>Frequently Asked Questions</b></h1>
+        <p>(Click the Questions to view the Answer)</p><br>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Q: What are the career prospects after completing this course?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <p style="text-align: justify;"> A: After completing the course, the candidate can expect a
+                            range of career prospects in the hospitality industry. Some potential career paths include
+                            Hotel operational trainee or as individual department employee, Management trainee and as On
+                            the job trainee. If the student's communication and quantum of technical knowledge and skill
+                            is commendable, then the hotels can absorb the student as a team leader in any one of the 4
+                            major departments whichever the student specializes.
+
+                            With a hotel management background, the student could specialize in event planning and
+                            coordination, organizing conferences, weddings, meetings, and other special events within
+                            hotels or event management companies.
+
+                            The student would focus on promoting the hotel's services, attracting new customers,
+                            managing client relationships, developing marketing strategies, and driving revenue through
+                            sales efforts.
+
+                            The student could become a revenue manager and would analyze market trends, set pricing
+                            strategies, manage inventory and distribution channels, and optimize revenue for the hotel
+                            by maximizing room rates and occupancy.
+
+                            With experience and expertise in hotel management, the student could work as a consultant,
+                            providing advisory services to hotels, resorts, or hospitality organizations, offering
+                            guidance on operations, efficiency, profitability, and guest satisfaction.
+
+                            Armed with knowledge of hotel management, the student may consider starting the student's
+                            own hotel or hospitality-related businesses, such as a boutique hotel, bed and breakfast, or
+                            a specialized service within the industry.
+
+                            These are just a few examples of the career prospects available after completing a hotel
+                            management course. The hospitality industry offers diverse opportunities for growth, and
+                            with experience and continuous learning, the student can progress into higher-level
+                            management positions or explore other areas of the industry
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Q: What Is the qualification and duration required for the BSc., in catering and hotel
+                        administration degree program?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p style="text-align: justify;">
+                            The course is a three-year bachelor's degree programme divided into 6 semesters offered by
+                            The
+                            Alagappa University.
+                            During this time, the students learn communication and culinary skills, as well as other
+                            abilities required in the
+                            hotel management industry, such as food service, Front office operations, and housekeeping.
+                            In the final semester the student is destined to 100 days of Industrial Exposure Training or
+                            On
+                            the Job Training.
+                            The Hotel will study the skills of the student during the period of training and absorb him
+                            for
+                            a suitable job of
+                            his qualities. The qualification required to pursue this program is 10 +2 pass. This Hotel
+                            Management course is the
+                            best because, with this course in hotel management the student can appear for any Government
+                            public examinations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Q: What Is the qualification and duration required for the Diploma in catering and hotel
+                        administration degree program?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p style="text-align: justify;">
+                        The course is a three-year Diploma programme divided into 6 semesters offered by The Alagappa
+                        University.
+                        During this time, the students learn the technical skills required for the operations like food
+                        production, food & beverage service, Housekeeping, and Front office. The qualification required
+                        to pursue this program is 10th pass. The candidate who wishes to acquire a hotel management
+                        diploma
+                        can make it real choice. In the final semester the student is destined to 100 days of Industrial
+                        Exposure Training or On the Job Training. The Hotel will study the skills of the student during
+                        the period of training and absorb him for a suitable job of his qualities. Any Diploma courses,
+                        that is Diploma in Hotel management should have three years of program and should impart
+                        technical
+                        skills to the students for all the 3years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <footer id="footer" class="footer-type2">
         <div class="form-send-email">
@@ -281,11 +436,11 @@ The qualification required to pursue this program is 10 +2 pass. This Hotel Mana
                         <div id="copyright">
                             © 
                             <span class="text-year">
-                                2018
+                                2023
                             </span>
-                            <span class="text-name">
-                                Roy Design.
-                            </span>
+                            <a href="https://www.asquare.tech">  
+                            <span class="text-name">     Asquare Digital Solutions. 
+                            </span></a>
                             <span class="license">
                                 <a href="#">All Rights Reserved</a>
                             </span>
@@ -305,7 +460,7 @@ The qualification required to pursue this program is 10 +2 pass. This Hotel Mana
         </div>
         <a id="scroll-top" class="show"></a>
     </footer><!-- footer -->
-    
+
     <script src="javascript/rev-slider.js"></script>
     <script src="javascript/plugins.js"></script>
     <script src="javascript/jquery-countTo.js"></script>
@@ -335,4 +490,5 @@ The qualification required to pursue this program is 10 +2 pass. This Hotel Mana
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.video.min.js"></script>
 </body>
+
 </html>
