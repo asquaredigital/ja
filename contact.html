@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>JCHM</title>
 
     <!-- Mobile Specific Metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <!-- Bootstrap-->
     <link rel="stylesheet" href="stylesheet/bootstrap.css">
 
     <!-- Template Style-->
-    <link rel="stylesheet" href="stylesheet/font-awesome.css"> 
+    <link rel="stylesheet" href="stylesheet/font-awesome.css">
     <link rel="stylesheet" href="stylesheet/animate.css">
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/shortcodes.css">
@@ -27,13 +28,69 @@
     <script src="javascript/jquery.min.js"></script>
 
     <script>
-        $(function(){
-        $("#header1").load("header.html");
-        $("#footer1").load("footer.html");
+        $(function () {
+            $("#header1").load("header.html");
+            $("#footer1").load("footer.html");
         });
-        </script>
+    </script>
+
+    <style>
+        .blue-bg {
+            background-color: #3f4c9a;
+        }
+
+        .widget-nav-menu i {
+            color: #fff;
+        }
+        .widget-nav-menu a{
+            color: #fff;
+        }
+
+        .nav-sing i{
+            color: #fff;
+        }
+        .widget-nav-menu li{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .widget-social-media i{
+            color: #fff;
+        } 
+
+        .widget-social-media a{
+            color: #fff;
+        } 
+
+        .widget-social-media i:hover{
+            color: yellow;
+        } 
+
+        .widget-social-media a:hover{
+            color: yellow;
+        } 
+
+        .widget-nav-menu i:hover {
+            color: yellow;
+        }
+        .widget-nav-menu a:hover{
+            color: yellow;
+        }
+
+        .nav-sing i:hover{
+            color: yellow;
+        }
+        .widget-social-media li{
+            margin-left: 3rem;
+        }
+
+        .flat-title.small.text-white {
+    text-decoration-line: underline;
+}
+    </style>
 
 </head>
+
 <body>
     <div id="loading-overlay">
         <div class="loader"></div>
@@ -56,9 +113,9 @@
                         <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
                             <ul class="nav-sing">
                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,7 +125,8 @@
                 <div class="container">
                     <div class="menu-bar-wrap clearfix">
                         <div id="logo" class="logo">
-                            <a href="index.html"><img src="images/logo/02.png" alt="images" height="160px" width="160px"></a>
+                            <a href="index.html"><img src="images/logo/02.png" alt="images" height="160px"
+                                    width="160px"></a>
                         </div>
                         <div class="mobile-button"><span></span></div>
                         <div class="header-menu">
@@ -102,173 +160,136 @@
         <div class="flat-title medium heading-type20">Contact Us</div>
     </div>
 
-<div class="row my-5 mx-2">
+   
+<div id="contact-widget">
+        <div class="container py-2 px-4">
+            <div class="row ">
 
-
-    <div class="col-lg-6 mt-3">
-        <div class="container"  style="background-color: #ac163a;color: #fff;">
-            <div id="respond" class="comment-respond py-5">
-                
-        
-                <form action="#" method="post" class="comments">
-                        <div class="text-wrap clearfix">
-                            <div class="full-name-wrap">
-                                <input type="text" class="full-name" placeholder="Full name">
-                            </div>
-                            <div class="email-address-wrap">
-                                <input type="text" class="email-address" placeholder="Email Address">
+                <div class="col-lg-6 mt-3 blue-bg  px-0">
+                  <div class="d-flex justify-content-center">
+                    <div class=" my-5">
+                        <div class="title-section  mt-5"  style="margin-bottom: 5px !important;">
+                            <div class="flat-title small text-white"  style="font-size: 25px;">You Can Contact With Us
                             </div>
                         </div>
-        
-                    <div class="message-wrap">
-                        <textarea name="address" id="comment-message" rows="3" placeholder="Type here Address"></textarea>
-                    </div>
-        
-                    <div class="row ">
-                       
-                        <div class="col-lg-6 mt-3">
-                            <div class="full-name-wrap">
-                                <input type="text" class="full-name" placeholder="Mobile No">
-                            </div>
-                        </div>
-        
-                       <div class="col-lg-6 mt-3">
-                        <div class="email-address-wrap">
-                            <select name="course" id="course">
-                                <option value="">Courses</option>
-                                <option value="0">B.Sc. Catering & Hotel Administration</option>
-                                <option value="1">
-                                    Diploma in Catering and Hotel Administration (DCHA)
-                                </option>
-                                <option value="2">Craft Course in Food Production</option>
-                                <option value="3">Craft Course in Bakery & Confectionery</option>
-                                <option value="4">Craft Course in Food & Beverage Service</option>
-                                <option value="5">Craft Course in Front Office</option>
-                                <option value="6">Craft Course in Housekeeping</option>
-                                <option value=" 7">Hostess programme for Home Makers</option>
-                                <option value="8">Bar Flair programme for hotel Management students and Hotel staff</option>
-                            </select>
-                        </div>
-                       </div>
-                    </div>
-        
                     
-                    <div class="message-wrap">
-                        <textarea name="message" id="comment-message" rows="3" placeholder="Type here Message"></textarea>
+                        <ul class="widget-nav-menu mt-5">
+                             <li>
+                                <a href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp; &nbsp; +91 97912 29999, +91 99407 11444 <br> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                                    0431-2690920 / 0431-2690921 </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp; &nbsp;jenneysacademy@gmail.com </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-globe"></i>&nbsp;&nbsp; &nbsp;www.jenneysacademy </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-map-marker"></i>&nbsp;&nbsp; &nbsp;Manigandam Road, Ramjee
+                                    Nagar, Trichy-620 009. </a>
+                            </li>
+                        </ul>
+    
+                            <div class="title-section  mt-5"   style="margin-bottom: 5px !important;">
+                                <div class="flat-title small text-white" style="font-size: 25px;">Also Can Find Us
+                                </div>
+                            </div>
+                            <ul class="widget-social-media row ">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            </ul>
                     </div>
-                    <div class="mg-top30 d-flex justify-content-end">
-                        <button class="btn send-button bg-clfbb545" style="background-color: #fff;color: #ac163a;">
-                            Send Message
-                        </button>
+                  </div>
+
+                </div>
+
+                
+                <div class="col-lg-6 mt-3 px-0">
+                    <div class="container" style="background-color: #ac163a;color: #fff;">
+                        <div id="respond" class="comment-respond py-5">
+
+
+                            <form action="#" method="post" class="comments">
+                                <div class="row">
+                                <div class="col-lg-6 mt-3">
+                                    <div class="full-name-wrap">
+                                        <input type="text" class="full-name" placeholder="Full name">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 mt-3">
+                                    <div class="email-address-wrap">
+                                        <input type="text" class="email-address" placeholder="Email Address">
+                                    </div>
+                                </div>
+
+                        </div>
+
+                        <div class="message-wrap">
+                            <textarea name="address" style="height: 115px;" id="comment-message" 
+                                placeholder="Type here Address"></textarea>
+                        </div>
+
+                        <div class="row ">
+
+                            <div class="col-lg-6 mt-3">
+                                <div class="full-name-wrap">
+                                    <input type="number" class="full-name" placeholder="Mobile No">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mt-3">
+                                <div class="email-address-wrap">
+                                    <select name="course" id="course">
+                                        <option value="">Courses</option>
+                                        <option value="0">B.Sc. Catering & Hotel Administration</option>
+                                        <option value="1">
+                                            Diploma in Catering and Hotel Administration (DCHA)
+                                        </option>
+                                        <option value="2">Craft Course in Food Production</option>
+                                        <option value="3">Craft Course in Bakery & Confectionery</option>
+                                        <option value="4">Craft Course in Food & Beverage Service</option>
+                                        <option value="5">Craft Course in Front Office</option>
+                                        <option value="6">Craft Course in Housekeeping</option>
+                                        <option value=" 7">Hostess programme for Home Makers</option>
+                                        <option value="8">Bar Flair programme for hotel Management students and Hotel
+                                            staff</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="message-wrap">
+                            <textarea name="message" style="height: 115px;" id="comment-message" rows="3"
+                                placeholder="Type here Message"></textarea>
+                        </div>
+                        <div class="mg-top30 d-flex justify-content-end">
+                            <button class="btn send-button bg-clfbb545" style="background-color: #fff;color: #ac163a;">
+                                Send Message
+                            </button>
+                        </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
+    </div>
 
-    <div class="col-lg-6 mt-3"> 
+
+    <div class="row my-5 mx-0"> 
         <div class="container  h-100">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7839.102305381352!2d78.63347!3d10.769034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa5fe369e41127%3A0xf339e581eedfd59!2sJenneys%20Academy%20of%20Hotel%20Management!5e0!3m2!1sen!2sus!4v1685950119651!5m2!1sen!2sus" 
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>   
-        </div>
-</div>
+    </div>
 
 
-    <footer id="footer" class="footer-type2">
-        <div class="form-send-email">
-            <div class="container">
-                <form action="#" class="form-send">
-                    <input type="search" placeholder="Enter your email...">
-                    <button class="btn send-button bg-clfbb545" style="background-color: #ac163a;">
-                        Send
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div id="footer-widget">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-footer">
-                       <div class="logo-footer">
-                           <img src="images/logo/02.png" alt="images">
-                       </div>
-                    </div>
-                    <div class="col-lg-2 col-company">
-                        <h3 class="widget widget-title text-white">
-                            Company
-                        </h3>
-                        <ul class="widget-nav-menu">
-                            <li><a href="#">About Company</a></li>
-                            <li><a href="#">Feature Course</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-link">
-                        <h3 class="widget widget-title text-white">
-                            Help Links
-                        </h3>
-                        <ul class="widget-nav-menu">
-                            <li><a href="#">Student Support</a></li>
-                            <li><a href="#">Course Policy</a></li>
-                            <li><a href="#">Register Key</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-course">
-                        <h3 class="widget widget-title text-white">
-                            Course
-                        </h3> 
-                        <ul class="widget-nav-menu">
-                            <li><a href="#">Wordpres</a></li>
-                            <li><a href="#">Photography</a></li>
-                            <li><a href="#">Learning English</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-media">
-                        <h3 class="widget widget-title text-white">
-                            Social Media
-                        </h3>
-                        <ul class="widget-social-media">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="bottom" class="bottom-type2 clearfix has-spacer">
-            <div id="bottom-bar-inner" class="container">
-                <div class="bottom-bar-inner-wrap">
-                    <div class="bottom-bar-content">
-                        <div id="copyright">
-                            © 
-                            <span class="text-year">
-                                2023
-                            </span>
-                            <a href="https://www.asquare.tech">  
-                            <span class="text-name">     Asquare Digital Solutions. 
-                            </span></a>
-                            <span class="license">
-                                <a href="#">All Rights Reserved</a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="bottom-bar-menu">
-                        <ul class="bottom-nav">
-                            <li class="menu-item"><a href="#">About Company</a></li>
-                            <li class="menu-item"><a href="#">Privacy Policy</a></li>
-                            <li class="menu-item"><a href="#">Help Center</a></li>
-                            <li class="menu-item"><a href="#">Terms</a></li>
-                            <li class="menu-item"><a href="#">Site Map</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="scroll-top" class="show"></a>
-    </footer><!-- footer -->
+    <footer id="footer1"></footer>
+<!-- footer -->
 
     <script src="javascript/jquery.min.js"></script>
     <script src="javascript/rev-slider.js"></script>
@@ -301,4 +322,5 @@
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.video.min.js"></script>
 </body>
+
 </html>

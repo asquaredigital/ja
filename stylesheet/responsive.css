@@ -1289,13 +1289,17 @@
     .flat-benefit-style2 .iconbox-one,
     .flat-benefit-style2 .iconbox-two,
     .flat-benefit-style2 .iconbox-three,
-    .flat-benefit-style2 .iconbox-four{
+    .flat-benefit-style2 .iconbox-four,
+    .flat-benefit-style2 .iconbox-five,
+    .flat-benefit-style2 .iconbox-six{
       padding: 0;
     }
     .flat-benefit-style2 .iconbox-one .iconbox-content h3,
     .flat-benefit-style2 .iconbox-two .iconbox-content h3,
     .flat-benefit-style2 .iconbox-three .iconbox-content h3,
-    .flat-benefit-style2 .iconbox-four .iconbox-content h3{
+    .flat-benefit-style2 .iconbox-four .iconbox-content h3,
+    .flat-benefit-style2 .iconbox-five .iconbox-content h3,
+    .flat-benefit-style2 .iconbox-six .iconbox-content h3{
       margin: 15px 0 8px 0;
     }
     .flat-services-style2{

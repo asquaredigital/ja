@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>JCHM</title>
 
     <!-- Mobile Specific Metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <!-- Bootstrap-->
     <link rel="stylesheet" href="stylesheet/bootstrap.css">
 
     <!-- Template Style-->
-    <link rel="stylesheet" href="stylesheet/font-awesome.css"> 
+    <link rel="stylesheet" href="stylesheet/font-awesome.css">
     <link rel="stylesheet" href="stylesheet/animate.css">
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="stylesheet/shortcodes.css">
@@ -25,16 +26,78 @@
     <link href="icon/favicon.ico" rel="shortcut icon">
     <script src="javascript/jquery.min.js"></script>
 
-        <script>
-            $(function(){
+    <script>
+        $(function () {
             $("#header1").load("header.html");
             $("#footer1").load("footer.html");
+        });
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            color: black;
+        }
+
+        .faq-answer {
+            color: #333333;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .faq-question {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .faq-question {
+                font-size: 16px;
+            }
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .iconbox-content view {
+            color: #fbb545;
+        }
+
+        .iconbox-content view :hover {
+            color: #ac163a;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('.faq-question').click(function () {
+                $(this).next('.faq-answer').slideToggle();
             });
-            </script>
-        
-      
-       
+        });
+    </script>
+
+
+
 </head>
+
 <body>
     <div id="loading-overlay">
         <div class="loader"></div>
@@ -57,9 +120,9 @@
                         <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
                             <ul class="nav-sing">
                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +132,8 @@
                 <div class="container">
                     <div class="menu-bar-wrap clearfix">
                         <div id="logo" class="logo">
-                            <a href="index.html"><img src="images/logo/02.png" alt="images" height="160px" width="160px"></a>
+                            <a href="index.html"><img src="images/logo/02.png" alt="images" height="160px"
+                                    width="160px"></a>
                         </div>
                         <div class="mobile-button"><span></span></div>
                         <div class="header-menu">
@@ -92,60 +156,40 @@
                         <div class="overlay"></div>
 
                         <!-- Layers -->
-                        <div class="tp-caption tp-resizeme education"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
-                        data-fontsize="['50','50','50','25']"
-                        data-lineheight="['90','70','70','35']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on"> <div class="education-text text-white">Jenneys College of Hotel Management</div> </div>
+                        <div class="tp-caption tp-resizeme education" data-x="['left','left','left','center']"
+                            data-hoffset="['0','4','4','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-161','-100','-80','-50']" data-fontsize="['50','50','50','25']"
+                            data-lineheight="['90','70','70','35']" data-width="full" data-height="none"
+                            data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                            <div class="education-text text-white">Jenneys College of Hotel Management</div>
+                        </div>
 
                         <div class="tp-caption tp-resizeme text-white complete text-edukin"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
-                        data-fontsize="['17','17','16','14']"
-                        data-lineheight="['30','30','26','22']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on" 
-                        data-paddingright="['550','155','50','2']" >Carve your career with Jenneys Academy of Hotel Management. The First Choice of Future Hoteliers.</div>
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
+                            data-fontsize="['17','17','16','14']" data-lineheight="['30','30','26','22']"
+                            data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-paddingright="['550','155','50','2']">Carve your career with Jenneys Academy of Hotel
+                            Management. The First Choice of Future Hoteliers.</div>
 
-                        <div class="tp-caption"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['40','80','90','90']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on" 
-                        data-paddingtop= "['50','50','50','50']"
-                        data-paddingbottom= "['50','50','50','50']"> <a href="#" class="btn btn-styl1">Read More</a> </div>    
+                        <div class="tp-caption" data-x="['left','left','left','center']"
+                            data-hoffset="['0','4','4','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['40','80','90','90']" data-width="full" data-height="none"
+                            data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-paddingtop="['50','50','50','50']" data-paddingbottom="['50','50','50','50']"> <a
+                                href="#" class="btn btn-styl1">Read More</a> </div>
                     </li>
 
                     <!-- Slide 2 -->
@@ -157,59 +201,39 @@
                         <!-- Layers -->
 
                         <div class="tp-caption tp-resizeme font-rubik education education"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
-                        data-fontsize="['50','50','50','25']"
-                        data-lineheight="['90','70','70','35']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on"> <div class="education-text text-white">Jenneys College of Hotel Management</div> </div>
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
+                            data-fontsize="['50','50','50','25']" data-lineheight="['90','70','70','35']"
+                            data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                            <div class="education-text text-white">Jenneys College of Hotel Management</div>
+                        </div>
 
                         <div class="tp-caption tp-resizeme text-white complete text-edukin"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
-                        data-fontsize="['17','17','16','14']"
-                        data-lineheight="['30','30','26','22']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on" 
-                        data-paddingright="['550','155','50','2']" >Carve your career with Jenneys Academy of Hotel Management. The First Choice of Future Hoteliers.</div>
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
+                            data-fontsize="['17','17','16','14']" data-lineheight="['30','30','26','22']"
+                            data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-paddingright="['550','155','50','2']">Carve your career with Jenneys Academy of Hotel
+                            Management. The First Choice of Future Hoteliers.</div>
 
-                        <div class="tp-caption"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['40','80','90','90']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on" 
-                        data-paddingtop= "['50','50','50','50']"
-                        data-paddingbottom= "['50','50','50','50']"> <a href="#" class="btn btn-styl1">Read More</a> </div>
+                        <div class="tp-caption" data-x="['left','left','left','center']"
+                            data-hoffset="['0','4','4','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['40','80','90','90']" data-width="full" data-height="none"
+                            data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-paddingtop="['50','50','50','50']" data-paddingbottom="['50','50','50','50']"> <a
+                                href="#" class="btn btn-styl1">Read More</a> </div>
                     </li>
 
                     <!-- Slide 3 -->
@@ -221,59 +245,39 @@
                         <!-- Layers -->
 
                         <div class="tp-caption tp-resizeme font-rubik education education"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
-                        data-fontsize="['50','50','50','25']"
-                        data-lineheight="['90','70','70','35']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on"> <div class="education-text text-white">Jenneys College of Hotel Management</div> </div>
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-161','-100','-80','-50']"
+                            data-fontsize="['50','50','50','25']" data-lineheight="['90','70','70','35']"
+                            data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                            <div class="education-text text-white">Jenneys College of Hotel Management</div>
+                        </div>
 
                         <div class="tp-caption tp-resizeme text-white complete text-edukin"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
-                        data-fontsize="['17','17','16','14']"
-                        data-lineheight="['30','30','26','22']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on" 
-                        data-paddingright="['550','155','50','2']" >Carve your career with Jenneys Academy of Hotel Management. The First Choice of Future Hoteliers.</div>
+                            data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-70','-10','5','20']"
+                            data-fontsize="['17','17','16','14']" data-lineheight="['30','30','26','22']"
+                            data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-paddingright="['550','155','50','2']">Carve your career with Jenneys Academy of Hotel
+                            Management. The First Choice of Future Hoteliers.</div>
 
-                        <div class="tp-caption"
-                        data-x="['left','left','left','center']" data-hoffset="['0','4','4','15']"
-                        data-y="['middle','middle','middle','middle']" data-voffset="['40','80','90','90']"
-                        data-width="full"
-                        data-height="none"
-                        data-whitespace="normal"
-                        data-transform_idle="o:1;"
-                        data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                        data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                        data-mask_in="x:0px;y:[100%];" 
-                        data-mask_out="x:inherit;y:inherit;" 
-                        data-start="1000" 
-                        data-splitin="none" 
-                        data-splitout="none" 
-                        data-responsive_offset="on" 
-                        data-paddingtop= "['50','50','50','50']"
-                        data-paddingbottom= "['50','50','50','50']"> <a href="#" class="btn btn-styl1">Read More</a> </div>
+                        <div class="tp-caption" data-x="['left','left','left','center']"
+                            data-hoffset="['0','4','4','15']" data-y="['middle','middle','middle','middle']"
+                            data-voffset="['40','80','90','90']" data-width="full" data-height="none"
+                            data-whitespace="normal" data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                            data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            data-paddingtop="['50','50','50','50']" data-paddingbottom="['50','50','50','50']"> <a
+                                href="#" class="btn btn-styl1">Read More</a> </div>
                     </li>
                 </ul>
             </div>
@@ -290,8 +294,12 @@
                                     <img src="images/home2/24.png" alt="images">
                                 </div>
                                 <div class="iconbox-content">
-                                    <h3><a href="#">University Life</a></h3>
-                                    <p>We rigorously screen and train our instructors ensure that.</p>
+                                    <h3><a href="#">Versatile Skill Set</a></h3>
+                                    <p> Studying Hotel Management at Jenneys Academy of Hotel Management develops a
+                                        versatile skill set that can be applied across multiple industries. <br>
+                                        <a style="font-size: 15px;" class="view" href="highlights.html#a1"> View
+                                            More</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -301,8 +309,12 @@
                                     <img src="images/home2/25.png" alt="images">
                                 </div>
                                 <div class="iconbox-content">
-                                    <h3><a href="#">Graduation</a></h3>
-                                    <p>We rigorously screen and train our instructors ensure that.</p>
+                                    <h3><a href="#">Constant Learning and Challenges</a></h3>
+                                    <p>The hospitality industry is fast-paced and ever-evolving, which means the
+                                        student will face new challenges and learn something new every day. <br>
+                                        <a style="font-size: 15px;" class="view" href="highlights.html#a2"> View
+                                            More</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -312,8 +324,12 @@
                                     <img src="images/home2/26.png" alt="images">
                                 </div>
                                 <div class="iconbox-content">
-                                    <h3><a href="#">Library</a></h3>
-                                    <p>We rigorously screen and train our instructors ensure that.</p>
+                                    <h3><a href="#">People-Oriented Profession</a></h3>
+                                    <p>Hotel management is a people-oriented profession that allows the student
+                                        to interact with a diverse range of individuals. <br>
+                                        <a style="font-size: 15px;" class="view" href="highlights.html#a3"> View
+                                            More</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -323,11 +339,17 @@
                                     <img src="images/home2/27.png" alt="images">
                                 </div>
                                 <div class="iconbox-content">
-                                    <h3><a href="#">Social</a></h3>
-                                    <p>We rigorously screen and train our instructors ensure that.</p>
+                                    <h3><a href="#">Lucrative Career Opportunities</a></h3>
+                                    <p> The hotel industry offers promising career prospects and financial stability.
+                                        <br>
+                                        <a style="font-size: 15px;" class="view" href="highlights.html#a4"> View
+                                            More</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -337,7 +359,7 @@
                                 <h2 class="title text-center">
                                     <span>Apply for admission</span>
                                 </h2>
-                                
+
                             </div>
                         </div>
                         <div class="form-apply">
@@ -353,13 +375,57 @@
                                         Apply now
                                     </button>
                                 </div>
-                            </form>  
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section><!-- campus -->
+
+    <section class="campus" style="margin-top: 2rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="flat-benefit-style2 clearfix">
+
+                        <div class="iconbox-benefit iconbox-width50">
+                            <div class="iconbox iconbox-one">
+                                <div class="iconbox-icon">
+                                    <img src="images/icon/pngwing.com.png" alt="images">
+                                </div>
+                                <div class="iconbox-content">
+                                    <h3><a href="#">Global Opportunities</a></h3>
+                                    <p>Hotel management is a highly dynamic industry that offers diverse opportunities
+                                        for career growth. <br>
+                                        <a style="font-size: 15px;" class="view" href="highlights.html#a5"> View
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iconbox-benefit iconbox-width50">
+                            <div class="iconbox iconbox-two ">
+                                <div class="iconbox-icon">
+                                    <img style="height: 80px; width: 80px;" src="images/icon/enterpren.png"
+                                        alt="images">
+                                </div>
+                                <div class="iconbox-content">
+                                    <h3><a href="#">Entrepreneurial Ventures</a></h3>
+                                    <p>Hotel management can also provide a pathway for aspiring entrepreneurs.</br>
+                                        <a style="font-size: 15px;" class="view" href="highlights.html#a6"> View
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- campus -->
+
     <section class="flat-introduce flat-introduce-style2 clearfix">
         <div class="bg"></div>
         <div class="container-fluid">
@@ -368,7 +434,7 @@
                     <a class="fancybox" data-type="iframe" href="https://www.youtube.com/embed/1CDYanjfBTU">
                         <img src="images/home2/9.png" alt="images">
                     </a>
-                    
+
                 </div>
             </div>
             <div class="section-about-right content-introduce">
@@ -380,10 +446,12 @@
                 </div>
                 <div class="content-introduce-inner">
                     <p>
-                        Education is the most powerful weapon which you can use to change the world.” Education is the key to eliminating gender inequality, to reducing poverty.
+                        Education is the most powerful weapon which you can use to change the world.” Education is the
+                        key to eliminating gender inequality, to reducing poverty.
                     </p>
                     <p>
-                        to creating a sustainable planet, to preventing needless deaths and illness, and to fostering peace.
+                        to creating a sustainable planet, to preventing needless deaths and illness, and to fostering
+                        peace.
                     </p>
                     <div class="content-list">
                         <ul>
@@ -398,7 +466,7 @@
                                 </span>
                             </li>
                             <li>
-                                <span class="text">  
+                                <span class="text">
                                     Education is not key to success in life.
                                 </span>
                             </li>
@@ -412,57 +480,66 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 3.6%" data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
+                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 3.6%"
+                        data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
                         <div class="imagebox-content">
                             <img src="images/home2/12.png" alt="images">
-                            <h5 class="text-one text-white">Education Services</h5>
+                            <h5 class="text-one text-white">Creative and Innovative Environment</h5>
                             <p class="text-white">
-                                Education is the most power which you can use to change the world.” Education is the key to.
+                                Education is the most power which you can use to change the world.” Education is the key
+                                to.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read More</a>
+                                <a href="highlights.html#h1">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 3%" data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
+                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 3%"
+                        data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
                         <div class="imagebox-content">
                             <img src="images/home2/13.png" alt="images">
-                            <h5 class="text-two text-white">Success Rate</h5>
+                            <h5 class="text-two text-white">Experienced Teaching team
+
+                            </h5>
                             <p class="text-white">
-                                Education is the most power which you can use to change the world.” Education is the key to.
+                                Education is the most power which you can use to change the world.” Education is the key
+                                to.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read More</a>
+                                <a href="highlights.html#h2">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 2.5%" data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
+                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 2.5%"
+                        data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
                         <div class="imagebox-content">
                             <img src="images/home2/14.png" alt="images">
-                            <h5 class="text-three text-white">Foreign Student</h5>
+                            <h5 class="text-three text-white">Laboratory facilities</h5>
                             <p class="text-white">
-                                Education is the most power which you can use to change the world.” Education is the key to.
-                            </p>
+                                The spacious and sophisticated laboratory facilitates the students
+                                to have hands on training with a casual learning access. </p>
                             <div class="read-more">
-                                <a href="#">Read More</a>
+                                <a href="highlights.html#h3">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 2.2%" data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
+                    <div class="flat-imagebox imagebox-services themesflat-content-box" data-padding="0% 0% 0% 2.2%"
+                        data-mobipadding="0% 0% 0% 0%" data-smobipadding="0% 0% 0% 0%">
                         <div class="imagebox-content">
                             <img src="images/home2/15.png" alt="images">
-                            <h5 class="text-four text-white">University Life</h5>
+                            <h5 class="text-four text-white">Training and Placements</h5>
                             <p class="text-white">
-                                Education is the most power which you can use to change the world.” Education is the key to.
+                                The training and placement coordinator has communication
+                                with the hotels and fine dining restaurants.
                             </p>
                             <div class="read-more">
-                                <a href="#">Read More</a>
+                                <a href="highlights.html#h4">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -473,24 +550,26 @@
     <section class="flat-benefit style22">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-12">
                     <div class="title-section">
                         <div class="flat-title small heading-type5">
-                           Why choose us?
+                            Why choose us?
                         </div>
                     </div>
                     <ul>
                         <li>
                             <div class="iconbox-benefit">
                                 <div class="iconbox">
-                                    <div class="iconbox-icon">
+                                    <!-- <div class="iconbox-icon">
                                         <img src="images/home2/17.png" alt="images">
-                                    </div>
+                                    </div> -->
                                     <div class="iconbox-content iconbox-content-style22">
-                                        <h3><a href="#">Certificate</a></h3>
+                                        <!-- <h3><a href="#">Certificate</a></h3> -->
                                         <p>
-                                           Education is the most power which you can to change the world.” Education is the key to.
-                                        </p>
+                                            The quality of faculty members is one of the most significant assets of our
+                                            institution. Our experienced and knowledgeable faculty members provide
+                                            students with a good-quality education and training that prepares them for
+                                            careers in the hospitality industry.</p>
                                     </div>
                                 </div>
                             </div>
@@ -498,13 +577,19 @@
                         <li>
                             <div class="iconbox-benefit">
                                 <div class="iconbox">
-                                    <div class="iconbox-icon">
+                                    <!-- <div class="iconbox-icon">
                                         <img src="images/home2/18.png" alt="images">
-                                    </div>
+                                    </div> -->
                                     <div class="iconbox-content iconbox-content-style22">
-                                        <h3><a href="#">Life Programs</a></h3>
+                                        <!-- <h3><a href="#">Life Programs</a></h3> -->
                                         <p>
-                                           Education is the most power which you can to change the world.” Education is the key to.
+                                            A well-designed and up-to-date curriculum is essential for an institution to
+                                            provide students with the knowledge and skills required to succeed in the
+                                            hospitality industry. The Alagappa University, Karaikudi has designed an
+                                            excellent curriculum for the Under Graduate Program, Diploma and Craft
+                                            Certificate Programs. The curriculum covers all the aspects of Hotel
+                                            Management, including Food and Beverage Service, Housekeeping, Front Office
+                                            management, Marketing, Budgeting and more.
                                         </p>
                                     </div>
                                 </div>
@@ -513,28 +598,337 @@
                         <li>
                             <div class="iconbox-benefit">
                                 <div class="iconbox">
-                                    <div class="iconbox-icon">
+                                    <!-- <div class="iconbox-icon">
                                         <img src="images/home2/19.png" alt="images">
-                                    </div>
+                                    </div> -->
                                     <div class="iconbox-content iconbox-content-style22">
-                                        <h3><a href="#">Affordability</a></h3>
+                                        <!-- <h3><a href="#">Affordability</a></h3> -->
                                         <p>
-                                           Education is the most power which you can to change the world.” Education is the key to.
+                                            JAHM has modern and well-equipped classrooms with latest teaching aids,
+                                            large training kitchens, training restaurants, and guest rooms that provide
+                                            students with a practical learning experience. State-of-the-art facilities
+                                            are provided to enhance the students efficiency and institution's
+                                            reputation.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </li>
+
+                        <li>
+                            <div class="iconbox-benefit">
+                                <div class="iconbox">
+                                    <!-- <div class="iconbox-icon">
+                                        <img src="images/home2/19.png" alt="images">
+                                    </div> -->
+                                    <div class="iconbox-content iconbox-content-style22">
+                                        <!-- <h3><a href="#">Affordability</a></h3> -->
+                                        <p>
+                                            In collaboration with the hospitality industry we provide students with
+                                            real-world experience, exposure to industry trends, and access to employment
+                                            opportunities. These partnerships can also provide the institution with
+                                            resources such as guest lectures, industry insights, and innovation in food
+                                            industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="iconbox-benefit">
+                                <div class="iconbox">
+                                    <!-- <div class="iconbox-icon">
+                                        <img src="images/home2/19.png" alt="images">
+                                    </div> -->
+                                    <div class="iconbox-content iconbox-content-style22">
+                                        <!-- <h3><a href="#">Affordability</a></h3> -->
+                                        <p>
+                                            We also have a strong and engaged alumni network. This network is spread
+                                            worldwide because our alumni are working in many parts of the world, and the
+                                            major reason being, our institution has been producing hoteliers since 1996.
+                                            Our Alumni serve as our ambassadors and help the budding hoteliers.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="iconbox-benefit">
+                                <div class="iconbox">
+                                    <!-- <div class="iconbox-icon">
+                                        <img src="images/home2/19.png" alt="images">
+                                    </div> -->
+                                    <div class="iconbox-content iconbox-content-style22">
+                                        <!-- <h3><a href="#">Affordability</a></h3> -->
+                                        <p>
+                                            These assets of JAHM will help the students to acquire a good-quality
+                                            education and training added with the goodwill and reputation of the
+                                            institution.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
                     </ul>
-                </div>
-                <div class="col-lg-7">
-                    <div class="featured-post">
-                        <img src="images/home2/2.jpg" alt="images">
-                    </div>
                 </div>
             </div>
         </div>
     </section><!-- flat-benefit -->
+
+
+    <div class="course-grid">
+        <div class="container">
+            <div class="title-section">
+                <div class="flat-title small heading-type5">
+                    Courses
+                </div>
+            </div>
+            <div class="flat-courses clearfix isotope-courses">
+                <div class="course clearfix Marketing Certificate Popular">
+                    <div class="flat-course">
+                        <div class="featured-post post-media">
+                            <div class="entry-image pic">
+                                <img src="images/course-grid/1.jpg" alt="images">
+                                <div class="hover-effect"></div>
+                                <div class="links">
+                                    <a href="course-single.html#c1">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-content clearfix">
+                            <div class="wrap-course-content">
+                                <h4>
+                                    <a href="course-single.html#c1"> B.Sc., in Catering & Hotel Administration</a>
+                                </h4>
+                                <p>
+                                    <!-- Studying 3-years Degree in hotel management course can provide the student with a comprehensive understanding of the hospitality industry and equip the student with the necessary skills to pursue a career in hotel management.  -->
+
+                                    Eligibility: 10+2 Pass <br>
+                                    Duration: 6 Semesters / 3 Years
+                                </p>
+                                <div class="author-info">
+                                    <div class="author-name">
+                                    </div>
+                                    <div class="enroll">
+                                        <a href="course-single.html#c1">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="course clearfix Marketing">
+                    <div class="flat-course">
+                        <div class="featured-post post-media active">
+                            <div class="entry-image pic">
+                                <img src="images/course-grid/2.jpg" alt="images">
+                                <div class="hover-effect"></div>
+                                <div class="links">
+                                    <a href="course-single.html#c2">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-content clearfix">
+                            <div class="wrap-course-content">
+                                <h4>
+                                    <a href="course-single#c.html">Diploma in Catering & Hotel Administration</a>
+                                </h4>
+                                <p>
+                                    <!-- Education City is initiative of our Qatar Foundation for Education, Science and Community Development.  -->
+                                    Eligibility: 10th Pass <br>
+                                    Duration: 6 Semesters / 3 Years
+                                </p>
+                                <div class="author-info">
+                                    <div class="author-name">
+                                    </div>
+                                    <div class="enroll">
+                                        <a href="course-single.html#c2">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="course clearfix Popular Certificate">
+                    <div class="flat-course">
+                        <div class="featured-post post-media">
+                            <div class="entry-image pic">
+                                <img src="images/course-grid/3.jpg" alt="images">
+                                <div class="hover-effect"></div>
+                                <div class="links">
+                                    <a href="course-single.html#c3">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-content clearfix">
+                            <div class="wrap-course-content">
+                                <h4>
+                                    <a href="course-single.html#c3">Craft Certificate Course in Food Production</a>
+                                </h4>
+                                <p>
+                                    <!-- Education City is initiative of our Qatar Foundation for Education, Science and Community Development.  -->
+                                    Eligibility: 10+2 Pass<br>
+                                    Duration: 2 Semesters / 1 Year
+                                </p>
+                                <div class="author-info">
+                                    <div class="author-name">
+                                    </div>
+                                    <div class="enroll">
+                                        <a href="course-single.html#c3">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="course clearfix Marketing Certificate Learning">
+                    <div class="flat-course">
+                        <div class="featured-post post-media">
+                            <div class="entry-image pic">
+                                <img src="images/course-grid/4.jpg" alt="images">
+                                <div class="hover-effect"></div>
+                                <div class="links">
+                                    <a href="course-single.html#c4">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-content clearfix">
+                            <div class="wrap-course-content">
+                                <h4>
+                                    <a href="course-single.html#c4">Craft Certificate Course in Bakery and
+                                        Confectionery</a>
+                                </h4>
+                                <p>
+                                    <!-- Education City is initiative of our Qatar Foundation for Education, Science and Community Development.   -->
+                                    Eligibility: 10th Pass<br>
+                                    Duration: 2 Semesters / 1 Year
+                                </p>
+                                <div class="author-info">
+                                    <div class="author-name">
+                                    </div>
+                                    <div class="enroll">
+                                        <a href="course-single.html#c4">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="course clearfix Marketing Certificate">
+                    <div class="flat-course">
+                        <div class="featured-post post-media">
+                            <div class="entry-image pic">
+                                <img src="images/course-grid/5.jpg" alt="images">
+                                <div class="hover-effect"></div>
+                                <div class="links">
+                                    <a href="course-single.html#c5">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-content clearfix">
+                            <div class="wrap-course-content">
+                                <h4>
+                                    <a href="course-single.html#c5">Craft Certificate Course in Food and Beverage
+                                        Service</a>
+                                </h4>
+                                <p>
+                                    <!-- Education City is initiative of our Qatar Foundation for Education, Science and Community Development.  -->
+                                    Eligibility: 10th Pass <br>
+                                    Duration: 2 Semesters / 1 Year
+                                </p>
+                                <div class="author-info">
+                                    <div class="author-name">
+                                    </div>
+                                    <div class="enroll">
+                                        <a href="course-single.html#c5">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="course clearfix Marketing Certificate">
+                    <div class="flat-course">
+                        <div class="featured-post post-media">
+                            <div class="entry-image pic">
+                                <img src="images/course-grid/6.jpg" alt="images">
+                                <div class="hover-effect"></div>
+                                <div class="links">
+                                    <a href="course-single.html#c6">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-content clearfix">
+                            <div class="wrap-course-content">
+                                <h4>
+                                    <a href="#">Craft Certificate Course in Housekeeping</a>
+                                </h4>
+                                <p>
+                                    <!-- Education City is initiative of our Qatar Foundation for Education, Science and Community Development.  -->
+                                    Eligibility: 10th Pass <br>
+                                    Duration: 2 Semesters / 1 Year
+                                </p>
+                                <div class="author-info">
+                                    <div class="author-name">
+                                    </div>
+                                    <div class="enroll">
+                                        <a href="course-single.html#c6">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="course clearfix Marketing Certificate">
+                    <div class="flat-course">
+                        <div class="featured-post post-media">
+                            <div class="entry-image pic">
+                                <img src="images/course-grid/7.jpg" alt="images">
+                                <div class="hover-effect"></div>
+                                <div class="links">
+                                    <a href="course-single#c7.html">Preview</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-content clearfix">
+                            <div class="wrap-course-content">
+                                <h4>
+                                    <a href="course-single#c7.html">Craft Certificate Course in Front office</a>
+                                </h4>
+                                <p>
+                                    <!-- Education City is initiative of our Qatar Foundation for Education, Science and Community Development.   -->
+                                    Eligibility: 12th Pass <br>
+
+                                    Duration: 2 Semesters / 1 Year
+                                </p>
+                                <div class="author-info">
+                                    <div class="author-name">
+                                    </div>
+                                    <div class="enroll">
+                                        <a href="course-single.html#c7">Course Details</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div><!-- course-grid -->
+
+
     <section class="testimonial testimonial-style2">
         <div class="container">
             <div class="row">
@@ -547,15 +941,19 @@
                     <div class="wrap-testimonial">
                         <div class="title-section">
                             <div class="flat-title small heading-type5">
-                               Something Special
+                                Something Special
                             </div>
                         </div>
                         <div class="client-style2 clearfix">
-                            <div class="flat-carousel-box data-effect clearfix" data-gap="30" data-column="1" data-column2="1" data-column3="1" data-column4="1" data-dots="true" data-auto="false" data-nav="false">
+                            <div class="flat-carousel-box data-effect clearfix" data-gap="30" data-column="1"
+                                data-column2="1" data-column3="1" data-column4="1" data-dots="true" data-auto="false"
+                                data-nav="false">
                                 <div class="owl-carousel">
                                     <div class="testimonial-content">
                                         <div class="text text-white">
-                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new life!"I learned most of my programming skills and database hrough self-study and the material available on Coursecity.
+                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new
+                                            life!"I learned most of my programming skills and database hrough self-study
+                                            and the material available on Coursecity.
                                         </div>
                                         <div class="author-info">
                                             <h5>
@@ -568,7 +966,9 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <div class="text text-white">
-                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new life!"I learned most of my programming skills and database hrough self-study and the material available on Coursecity.
+                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new
+                                            life!"I learned most of my programming skills and database hrough self-study
+                                            and the material available on Coursecity.
                                         </div>
                                         <div class="author-info">
                                             <h5>
@@ -581,7 +981,9 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <div class="text text-white">
-                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new life!"I learned most of my programming skills and database hrough self-study and the material available on Coursecity.
+                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new
+                                            life!"I learned most of my programming skills and database hrough self-study
+                                            and the material available on Coursecity.
                                         </div>
                                         <div class="author-info">
                                             <h5>
@@ -594,7 +996,9 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <div class="text text-white">
-                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new life!"I learned most of my programming skills and database hrough self-study and the material available on Coursecity.
+                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new
+                                            life!"I learned most of my programming skills and database hrough self-study
+                                            and the material available on Coursecity.
                                         </div>
                                         <div class="author-info">
                                             <h5>
@@ -607,7 +1011,9 @@
                                     </div>
                                     <div class="testimonial-content">
                                         <div class="text text-white">
-                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new life!"I learned most of my programming skills and database hrough self-study and the material available on Coursecity.
+                                            "Before Coursecity, I was working two minimum wage jobs. Now,<br> & new
+                                            life!"I learned most of my programming skills and database hrough self-study
+                                            and the material available on Coursecity.
                                         </div>
                                         <div class="author-info">
                                             <h5>
@@ -630,7 +1036,7 @@
         <div class="container">
             <div class="title-section">
                 <div class="flat-title small heading-type7">
-                   Latest Blog 
+                    Latest Blog
                 </div>
             </div>
             <div class="row">
@@ -699,12 +1105,14 @@
     </section><!-- latest-blog -->
     <section class="flat-event flat-event-bg event-bg1 flat-event-style2 clearfix">
         <div class="content-event-left">
-            <div class="themesflat-content-box" data-padding="11% 15px 11.25% 24.7%" data-sdesktoppadding="11% 15px 11.25% 16.9%" data-ssdesktoppadding="10% 15px 10% 8.5%" data-mobipadding="90px 15px 60px 15%" data-smobipadding="90px 15px 60px 15px">
+            <div class="themesflat-content-box" data-padding="11% 15px 11.25% 24.7%"
+                data-sdesktoppadding="11% 15px 11.25% 16.9%" data-ssdesktoppadding="10% 15px 10% 8.5%"
+                data-mobipadding="90px 15px 60px 15%" data-smobipadding="90px 15px 60px 15px">
                 <div class="section-overlay"></div>
                 <div class="wrap-event">
                     <div class="title-section">
                         <div class="flat-title small heading-type8 text-white">
-                           All upcoming events
+                            All upcoming events
                         </div>
                     </div>
                     <div class="inner">
@@ -733,7 +1141,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-event">
+                        <div class="content-event h-100">
                             <div class="entry-info clearfix">
                                 <div class="entry-title">
                                     <a href="#" class="text-white">
@@ -812,57 +1220,87 @@
                 </div>
             </div>
             <div class="partner partner-style2">
-                <div class="themesflat-content-box" data-padding="0% 10% 0% 22.7%" data-sdesktoppadding="0% 10% 0% 16.9%" data-ssdesktoppadding="0% 15% 0% 8.5%" data-mobipadding="0% 15% 100px 15%" data-smobipadding="0% 15px 100px 15px">
-                    <div class="flat-carousel-box data-effect clearfix" data-gap="30" data-column="4" data-column2="4" data-column3="5" data-column4="3" data-dots="false" data-auto="false" data-nav="true">
-                        <div class="owl-carousel">  
+                <div class="themesflat-content-box" data-padding="0% 10% 0% 22.7%"
+                    data-sdesktoppadding="0% 10% 0% 16.9%" data-ssdesktoppadding="0% 15% 0% 8.5%"
+                    data-mobipadding="0% 15% 100px 15%" data-smobipadding="0% 15px 100px 15px">
+                    <div class="flat-carousel-box data-effect clearfix" data-gap="30" data-column="4" data-column2="4"
+                        data-column3="5" data-column4="3" data-dots="false" data-auto="false" data-nav="true">
+                        <div class="owl-carousel">
                             <div class="imagesbox">
-                                <img src="images/home2/21.png" alt="images">
+                                <img src="images/recruiters/r1.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/22.png" alt="images">
+                                <img src="images/recruiters/r2.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/23.png" alt="images">
+                                <img src="images/recruiters/r3.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/21.png" alt="images">
+                                <img src="images/recruiters/r4.png" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/22.png" alt="images">
+                                <img src="images/recruiters/r5.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/23.png" alt="images">
+                                <img src="images/recruiters/r6.png" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/21.png" alt="images">
+                                <img src="images/recruiters/r7.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/22.png" alt="images">
+                                <img src="images/recruiters/r8.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/23.png" alt="images">
+                                <img src="images/recruiters/r9.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/21.png" alt="images">
+                                <img src="images/recruiters/r10.jpg" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/22.png" alt="images">
+                                <img src="images/recruiters/r11.png" alt="images">
                             </div>
                             <div class="imagesbox">
-                                <img src="images/home2/23.png" alt="images">
+                                <img src="images/recruiters/r12.png" alt="images">
                             </div>
+
+                            <div class="imagesbox">
+                                <img src="images/recruiters/r13.jpg" alt="images">
+                            </div>
+
+                            <div class="imagesbox">
+                                <img src="images/recruiters/r14.png" alt="images">
+                            </div>
+
+                            <div class="imagesbox">
+                                <img src="images/recruiters/r15.png" alt="images">
+                            </div>
+
+                            <div class="imagesbox">
+                                <img src="images/recruiters/r16.png" alt="images">
+                            </div>
+
+                            <div class="imagesbox">
+                                <img src="images/recruiters/r17.png" alt="images">
+                            </div>
+
+                            <div class="imagesbox">
+                                <img src="images/recruiters/r19.jpg" alt="images">
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="content-event-right">
-            <div class="themesflat-content-box" data-padding="9.2% 29.8% 13.7% 14.9%" data-sdesktoppadding="9.2% 21% 15% 6%" data-ssdesktoppadding="4% 8% 25% 8%"data-mobipadding="100px 15% 100px 15%" data-smobipadding="100px 15px 100px 15px">
-                <div class="caption">
+            <div class="themesflat-content-box" data-padding="9.2% 29.8% 13.7% 14.9%"
+                data-sdesktoppadding="9.2% 21% 15% 6%" data-ssdesktoppadding="4% 8% 25% 8%"
+                data-mobipadding="100px 15% 100px 15%" data-smobipadding="100px 15px 100px 15px">
+                <!-- <div class="caption">
                     FEATURED
-                </div>
+                </div> -->
                 <div class="wrap-event">
-                    <div class="flat-counter count-time" data-day="00" data-month="00" data-year="2020" data-hour="00" data-minutes="00" data-second="00">
+                    <!-- <div class="flat-counter count-time" data-day="00" data-month="00" data-year="2020" data-hour="00" data-minutes="00" data-second="00">
                         <div class="counter">
                             <ul>
                                 <li class="content-counter">
@@ -891,11 +1329,11 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="featured">
                         <div class="featured-wrap">
                             <img src="images/home2/8.jpg" alt="images">
-                            <div class="bg-333"> 
+                            <div class="bg-333">
                                 <div class="entry-title text-center">
                                     <a href="#" class="text-white">Education Conference..</a>
                                 </div>
@@ -916,17 +1354,145 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flat-button hv-bg333">
+                    <!-- <div class="flat-button hv-bg333">
                         <a href="#" class="btn-become">
                             Become a Sponsor
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section><!-- flat-event -->
+
+    <div class="title-section" style=" margin-top: 9rem; margin-left: 9rem;">
+        <div class="flat-title small heading-type7 text-left">
+            FAQ
+        </div>
+    </div>
+
+    <div class="faq-section">
+
+
+        <h1 style="color: black;font-size: 30px;"><b>Frequently Asked Questions</b></h1>
+        <p>(Click the Questions to view the Answer)</p><br>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Q: What are the career prospects after completing this course?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <p style="text-align: justify;"> A: After completing the course, the candidate can expect a
+                            range of career prospects in the hospitality industry. Some potential career paths include
+                            Hotel operational trainee or as individual department employee, Management trainee and as On
+                            the job trainee. If the student's communication and quantum of technical knowledge and skill
+                            is commendable, then the hotels can absorb the student as a team leader in any one of the 4
+                            major departments whichever the student specializes.
+
+                            With a hotel management background, the student could specialize in event planning and
+                            coordination, organizing conferences, weddings, meetings, and other special events within
+                            hotels or event management companies.
+
+                            The student would focus on promoting the hotel's services, attracting new customers,
+                            managing client relationships, developing marketing strategies, and driving revenue through
+                            sales efforts.
+
+                            The student could become a revenue manager and would analyze market trends, set pricing
+                            strategies, manage inventory and distribution channels, and optimize revenue for the hotel
+                            by maximizing room rates and occupancy.
+
+                            With experience and expertise in hotel management, the student could work as a consultant,
+                            providing advisory services to hotels, resorts, or hospitality organizations, offering
+                            guidance on operations, efficiency, profitability, and guest satisfaction.
+
+                            Armed with knowledge of hotel management, the student may consider starting the student's
+                            own hotel or hospitality-related businesses, such as a boutique hotel, bed and breakfast, or
+                            a specialized service within the industry.
+
+                            These are just a few examples of the career prospects available after completing a hotel
+                            management course. The hospitality industry offers diverse opportunities for growth, and
+                            with experience and continuous learning, the student can progress into higher-level
+                            management positions or explore other areas of the industry
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Q: What Is the qualification and duration required for the BSc., in catering and hotel
+                        administration degree program?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p style="text-align: justify;">
+                            The course is a three-year bachelor's degree programme divided into 6 semesters offered by
+                            The
+                            Alagappa University.
+                            During this time, the students learn communication and culinary skills, as well as other
+                            abilities required in the
+                            hotel management industry, such as food service, Front office operations, and housekeeping.
+                            In the final semester the student is destined to 100 days of Industrial Exposure Training or
+                            On
+                            the Job Training.
+                            The Hotel will study the skills of the student during the period of training and absorb him
+                            for
+                            a suitable job of
+                            his qualities. The qualification required to pursue this program is 10 +2 pass. This Hotel
+                            Management course is the
+                            best because, with this course in hotel management the student can appear for any Government
+                            public examinations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Q: What Is the qualification and duration required for the Diploma in catering and hotel
+                        administration degree program?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p style="text-align: justify;">
+                            The course is a three-year Diploma programme divided into 6 semesters offered by The
+                            Alagappa
+                            University.
+                            During this time, the students learn the technical skills required for the operations like
+                            food
+                            production, food & beverage service, Housekeeping, and Front office. The qualification
+                            required
+                            to pursue this program is 10th pass. The candidate who wishes to acquire a hotel management
+                            diploma
+                            can make it real choice. In the final semester the student is destined to 100 days of
+                            Industrial
+                            Exposure Training or On the Job Training. The Hotel will study the skills of the student
+                            during
+                            the period of training and absorb him for a suitable job of his qualities. Any Diploma
+                            courses,
+                            that is Diploma in Hotel management should have three years of program and should impart
+                            technical
+                            skills to the students for all the 3years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section class="special special-style2 clearfix">
-        <div class="container"> 
+        <div class="container">
             <div class="cl333">
                 <div class="bg bd-left">
                     <a href="#">Expert Instructors</a>
@@ -945,102 +1511,11 @@
                     <p>We rigorously screen and train our instructors ensure that they meet</p>
                 </div>
             </div>
-        </div> 
+        </div>
     </section><!-- special -->
-    <footer id="footer" class="footer-type2">
-        <div class="form-send-email">
-            <div class="container">
-                <form action="#" class="form-send">
-                    <input type="search" placeholder="Enter your email...">
-                    <button class="btn send-button bg-clfbb545" style="background-color: #ac163a;">
-                        Send
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div id="footer-widget">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-footer">
-                       <div class="logo-footer">
-                           <img src="images/logo/02.png" alt="images">
-                       </div>
-                    </div>
-                    <div class="col-lg-2 col-company">
-                        <h3 class="widget widget-title text-white">
-                            Company
-                        </h3>
-                        <ul class="widget-nav-menu">
-                            <li><a href="#">About Company</a></li>
-                            <li><a href="#">Feature Course</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-link">
-                        <h3 class="widget widget-title text-white">
-                            Help Links
-                        </h3>
-                        <ul class="widget-nav-menu">
-                            <li><a href="#">Student Support</a></li>
-                            <li><a href="#">Course Policy</a></li>
-                            <li><a href="#">Register Key</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-course">
-                        <h3 class="widget widget-title text-white">
-                            Course
-                        </h3> 
-                        <ul class="widget-nav-menu">
-                            <li><a href="#">Wordpres</a></li>
-                            <li><a href="#">Photography</a></li>
-                            <li><a href="#">Learning English</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-media">
-                        <h3 class="widget widget-title text-white">
-                            Social Media
-                        </h3>
-                        <ul class="widget-social-media">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="bottom" class="bottom-type2 clearfix has-spacer">
-            <div id="bottom-bar-inner" class="container">
-                <div class="bottom-bar-inner-wrap">
-                    <div class="bottom-bar-content">
-                        <div id="copyright">
-                            © 
-                            <span class="text-year">
-                                2018
-                            </span>
-                            <a href="https://www.asquare.tech">  
-                            <span class="text-name">     Asquare Digital Solutions. 
-                            </span></a>
-                            <span class="license">
-                                <a href="#">All Rights Reserved</a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="bottom-bar-menu">
-                        <ul class="bottom-nav">
-                            <li class="menu-item"><a href="#">About Company</a></li>
-                            <li class="menu-item"><a href="#">Privacy Policy</a></li>
-                            <li class="menu-item"><a href="#">Help Center</a></li>
-                            <li class="menu-item"><a href="#">Terms</a></li>
-                            <li class="menu-item"><a href="#">Site Map</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="scroll-top" class="show"></a>
-    </footer><!-- footer -->
+
+
+    <footer id="footer1"></footer>
 
     <script src="javascript/rev-slider.js"></script>
     <script src="javascript/plugins.js"></script>
@@ -1071,4 +1546,5 @@
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.video.min.js"></script>
 </body>
+
 </html>
