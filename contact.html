@@ -231,65 +231,73 @@
 
                             <form action="#" method="post" class="comments">
                                 <div class="row">
-                                    <div class="col-lg-6 mt-3">
-                                        <div class="full-name-wrap">
-                                            <input type="text" class="full-name" placeholder="Full name">
-                                        </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="fullname">Full Name:</label>
+                                            <input type="text" class="form-control" id="fullname" placeholder="Enter your full name" required>
+                                          </div>
                                     </div>
+                                    <div class="col-lg-6">
+                                      <div class="form-group">
+                                        <label for="email">Email Address:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                                      </div>
+                                      </div>
 
-                                    <div class="col-lg-6 mt-3">
-                                        <div class="email-address-wrap">
-                                            <input type="text" class="email-address" placeholder="Email Address">
+
+                                      <div class="col-lg-12">
+                                      <div class="form-group">
+                                        <label for="address">Address:</label>
+                                        <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+                                      </div>
+                                      </div>
+
+                                      
+                                    <div class="col-lg-6">
+                                      <div class="form-group">
+                                        <label for="mobile">Mobile Number:</label>
+                                        <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                                      </div>
+                                      </div>
+
+                                      
+                                    <div class="col-lg-6">
+                                      <div class="form-group">
+                                        <label for="courses">Courses:</label>
+                                        <select class="form-control" id="courses">
+                                            <option value="">Courses</option>
+                                            <option value="0">B.Sc. Catering & Hotel Administration</option>
+                                            <option value="1">
+                                                Diploma in Catering and Hotel Administration (DCHA)
+                                            </option>
+                                            <option value="2">Craft Course in Food Production</option>
+                                            <option value="3">Craft Course in Bakery & Confectionery</option>
+                                            <option value="4">Craft Course in Food & Beverage Service</option>
+                                            <option value="5">Craft Course in Front Office</option>
+                                            <option value="6">Craft Course in Housekeeping</option>
+                                        </select>
+                                      </div>
+                                      </div>
+
+                                      
+                                    <div class="col-lg-12">
+                                      <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Leave your message"></textarea>
+                                      </div>
+                                      </div>
+
+                                      <div class="col-lg-8 clearfix"></div>
+
+                                      <div class="col-lg-4">
+                                        <div class="mg-top30 d-flex justify-content-end">
+                                            <button class="btn send-button ">
+                                                Send Message
+                                            </button>
                                         </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="message-wrap">
-                                    <textarea name="address" style="height: 115px;" id="comment-message"
-                                        placeholder="Type here Address"></textarea>
-                                </div>
-
-                                <div class="row ">
-
-                                    <div class="col-lg-6 mt-3">
-                                        <div class="full-name-wrap">
-                                            <input type="number" class="full-name" placeholder="Mobile No">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 mt-3">
-                                        <div class="email-address-wrap">
-                                            <select name="course" id="course">
-                                                <option value="">Courses</option>
-                                                <option value="0">B.Sc. Catering & Hotel Administration</option>
-                                                <option value="1">
-                                                    Diploma in Catering and Hotel Administration (DCHA)
-                                                </option>
-                                                <option value="2">Craft Course in Food Production</option>
-                                                <option value="3">Craft Course in Bakery & Confectionery</option>
-                                                <option value="4">Craft Course in Food & Beverage Service</option>
-                                                <option value="5">Craft Course in Front Office</option>
-                                                <option value="6">Craft Course in Housekeeping</option>
-                                                <option value=" 7">Hostess programme for Home Makers</option>
-                                                <option value="8">Bar Flair programme for hotel Management students and
-                                                    Hotel
-                                                    staff</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="message-wrap">
-                                    <textarea name="message" style="height: 115px;" id="comment-message" rows="3"
-                                        placeholder="Type here Message"></textarea>
-                                </div>
-                                <div class="mg-top30 d-flex justify-content-end">
-                                    <button class="btn send-button ">
-                                        Send Message
-                                    </button>
-                                </div>
+                                      </div>
+                                
                             </form>
                         </div>
                     </div>
