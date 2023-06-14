@@ -34,6 +34,25 @@
         });
     </script>
 
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+
 
     <style>
         .highlight {
@@ -41,6 +60,35 @@
             font-weight: 500;
             font-size: large;
             color: black;
+        }
+
+        /* .team-box-layout-h1 .item-img img {
+            width: 70%;
+            padding-bottom: 80px;
+        } */
+
+        .team-box-layout-h1:hover .item-content {
+            text-decoration: none !important;
+        }
+
+        .pd-list-team1 {
+            border: #ac163a;
+            border-style: inset;
+            border-width: 5px;
+        }
+
+        .team-box-layout-h1 .item-img img {
+            width: 100%;
+            padding-bottom: 80px;
+            height: 340px;
+        }
+
+        .collapse.in {
+            display: inline !important;
+        }
+
+        #more {
+            display: none;
         }
     </style>
 </head>
@@ -118,13 +166,39 @@
             <div class="container ">
 
                 <div class="row">
-                    <div class="col-lg-4 d-flex align-items-center">
+                    <!-- <div class="col-lg-4 d-flex align-items-center">
                         <div class="text-center">
                             <img style="" src="images/about/5.jpg" alt="">
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <h3>Founder</h3> -->
 
+                    <div class="col-lg-3">
+                        <div class="pd-list-team1">
+                            <div class="team-box-layout-h1">
+                                <div class="item-img">
+                                    <img src="images/about/5.jpg" alt="images" class="img-fluid">
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-title">
+                                        <a href="#">Shri L.Adaikalaraj</a>
+                                    </div>
+                                    <div class="item-subtitle">Founder</div>
+                                    <ul class="item-social">
+                                        <li>
+                                            <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-8">
                         <!-- <p class="highlight">“To live in the hearts
                             we leave behind is not to die” 
@@ -166,12 +240,39 @@
             <div class="container ">
 
                 <div class="row">
-                    <div class="col-lg-4 d-flex align-items-center">
+                    <!-- <div class="col-lg-4 d-flex align-items-center">
                         <div class="text-center">
                             <img src="images/about/6.png" alt="">
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <h3>Founder</h3> -->
+
+                    <div class="col-lg-3">
+                        <div class="pd-list-team1">
+                            <div class="team-box-layout-h1">
+                                <div class="item-img">
+                                    <img src="images/about/6.png" alt="images" class="img-fluid">
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-title">
+                                        <a href="#">Thiru.A.Joshep Francis</a>
+                                    </div>
+                                    <div class="item-subtitle">Correspondent</div>
+                                    <ul class="item-social">
+                                        <li>
+                                            <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-lg-8 mt-3">
                         <p class="highlight">
@@ -201,12 +302,39 @@
             <div class="container ">
 
                 <div class="row">
-                    <div class="col-lg-4 d-flex align-items-center">
+                    <!-- <div class="col-lg-4 d-flex align-items-center">
                         <div class="text-center">
                             <img src="images/about/7.png" alt="">
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <h3>Founder</h3> -->
+
+                    <div class="col-lg-3">
+                        <div class="pd-list-team1">
+                            <div class="team-box-layout-h1">
+                                <div class="item-img">
+                                    <img src="images/about/7.png" alt="images" class="img-fluid">
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-title">
+                                        <a href="#">Mr.J.F Antony Siddhant</a>
+                                    </div>
+                                    <div class="item-subtitle">Co-Correspondent</div>
+                                    <ul class="item-social">
+                                        <li>
+                                            <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="col-lg-8 mt-5">
                         <p class="highlight">
@@ -249,7 +377,34 @@
                     </div> -->
                     <!-- <h3>Founder</h3> -->
 
-                    <div class="col-lg-12 mt-3">
+                    <div class="col-lg-3">
+                        <div class="pd-list-team1">
+                            <div class="team-box-layout-h1">
+                                <div class="item-img">
+                                    <img src="images/about/8.jpg" alt="images" class="img-fluid">
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-title">
+                                        <a href="#">Mr.Paal Vanan</a>
+                                    </div>
+                                    <div class="item-subtitle">Principal</div>
+                                    <ul class="item-social">
+                                        <li>
+                                            <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 mt-3">
 
                         <p style="text-align: justify;" class="pb-3">
                             It gives me immense pride and gratitude as the principal of this esteemed institution. Our
@@ -259,7 +414,8 @@
                             At the heart of our institution, we have a dedicated team of faculties and staff who strive
                             to provide the highest quality education to the students. They are not merely educators, but
                             mentors and guides who inspire, challenge, and encourage our students to reach their full
-                            potential. <br>
+                            potential. </p> <span id="dots"></span>
+                        <p id="more">
                             We believe in the power of education to transform lives. Our goal is to equip our students
                             with the skills, knowledge, and values necessary to thrive in an ever-changing world. We
                             strive to create a learning environment that fosters critical thinking, creativity, and a
@@ -275,14 +431,15 @@
                             Collaboration is a cornerstone of our institution. We believe that by fostering a spirit of
                             teamwork and cooperation, we create an environment where everyone can thrive. We encourage
                             open communication, mutual respect, and the exchange of ideas among students, parents, and
-                            staff. <br> 
+                            staff. <br>
                             Lastly, I want to express my gratitude to the parents and guardians who have entrusted us
                             with the education and well-being of their children. Your support and partnership are
                             invaluable in creating a nurturing and successful learning environment. <br>
                             As we move forward, let us continue to work together, motivated by a shared vision of
                             excellence and a commitment to the growth and success of our students. Together, we can
-                            continue to build a legacy of educational excellence that will impact generations to come.
-                            .</p>
+                            continue to build a legacy of educational excellence that will impact generations to come
+                            . </p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
 
                     </div>
                 </div>
@@ -293,6 +450,8 @@
 
     <footer id="footer1"></footer>
     <!-- footer -->
+
+
 
     <script src="javascript/jquery.min.js"></script>
     <script src="javascript/rev-slider.js"></script>
