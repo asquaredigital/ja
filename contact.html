@@ -241,20 +241,20 @@
                         <div id="respond" class="comment-respond py-5">
 
 
-                            <form action="#" method="post" class="comments">
+                            <form id="contact-form" method="post" class="contact-form">
                                 <div class="">
 
                                     <div class="col-lg-10">
                                         <div class="form-group">
                                             <label for="fullname">Full Name:</label>
-                                            <input type="text" class="form-control" id="fullname"
+                                            <input type="text" class="form-control" id="name" name="name"
                                                 placeholder="Enter your full name" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-10">
                                         <div class="form-group">
                                             <label for="email">Email Address:</label>
-                                            <input type="email" class="form-control" id="email"
+                                            <input type="email" class="form-control" id="email" name="email"
                                                 placeholder="Enter your email address" required>
                                         </div>
                                     </div>
@@ -271,7 +271,7 @@
                                     <div class="col-lg-10">
                                         <div class="form-group">
                                             <label for="mobile">Mobile Number:</label>
-                                            <input type="tel" class="form-control" id="mobile"
+                                            <input type="tel" class="form-control" id="contact" name="contact"
                                                 placeholder="Enter your mobile number" required>
                                         </div>
                                     </div>
@@ -299,7 +299,7 @@
                                     <div class="col-lg-10">
                                         <div class="form-group">
                                             <label for="message">Message:</label>
-                                            <textarea class="form-control" id="message" rows="5"
+                                            <textarea class="form-control" id="message" name="message" rows="5"
                                                 placeholder="Leave your message"></textarea>
                                         </div>
                                     </div>
@@ -309,11 +309,13 @@
 
                                     <div class="col-lg-4">
                                         <div class="btn-50  text-end">
-                                            <button class="btn bg-clfbb545">
+                                            <button class="btn bg-clfbb545" type="submit">
                                                 Send Message
                                             </button>
                                         </div>
                                  </div>
+                                 <div style="text-align: center; color:white" id="response-message"></div>
+
 
                               
 
@@ -371,6 +373,40 @@
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.parallax.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.video.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#contact-form').submit(function(event) {
+                event.preventDefault(); // Prevent form submission
+        
+                // Get form data
+                var formData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    contact: $('#contact').val(),
+                    message: $('#message').val()
+                };
+        
+                // Send AJAX request
+                $.ajax({
+                    type: 'POST',
+                    url: 'contact2.php',
+                    data: formData,
+                    dataType: 'json',
+                    encode: true
+                })
+                .done(function(response) {
+                    // Display response message
+                    $('#response-message').text(response.message);
+                })
+                .fail(function(response) {
+                    // Display error message
+                    $('#response-message').text('Error occurred while processing the request.');
+                });
+            });
+        });
+        
+            </script>
 </body>
 
 </html>
