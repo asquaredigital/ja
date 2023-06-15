@@ -68,9 +68,10 @@
                     </h3>
                     <ul class="widget-social-media">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"  id="whatsapp-icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
                     </ul>
                 </div>
             </div>
@@ -108,3 +109,15 @@
     </div>
     <a id="scroll-top" class="show"></a>
 </footer><!-- footer -->
+
+
+<script>
+    $(document).ready(function () {
+      $('#whatsapp-icon').click(function () {
+        var phone = '+91 9791229999'; // Replace with your phone number
+        var message = 'Hello'; // Replace with your message
+        var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
+        window.open(url);
+      });
+    });
+  </script>
