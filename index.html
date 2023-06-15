@@ -445,10 +445,12 @@
                                 </div>
                                 <div style="text-align: center; color:white" id="response-message"></div>
                                 <div class="hv-border text-center mt-2">
+                                    <button class="btn bg-clfbb545">
                                         <p style="color: white;font-weight: 700;">Admissions 2023 - 2024 is going on</p>
                                         <a style="color: #fff; font-weight: 600;" href="application.html">
                                             Click here for Online Application>>
                                         </a>
+                                    </button>
                                 </div>
                             </form>
 
@@ -1588,11 +1590,11 @@
                     // Display response message
                     $('#response-message').text(response.message);
                     $("#contact-form").trigger("reset");
-
                 })
                 .fail(function(response) {
                     // Display error message
                     $('#response-message').text('Error occurred while processing the request.');
+                    $("#contact-form").trigger("reset");
                 });
             });
         });
