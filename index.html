@@ -432,16 +432,17 @@
                         </div>
                         <div class="form-apply">
                             <div class="section-overlay183251"></div>
-                            <form action="#" class="apply-now">
+                            <form id="contact-form" method="post" class="contact-form">
                                 <ul>
-                                    <li><input type="search" placeholder="Name"></li>
-                                    <li><input type="search" placeholder="Email"></li>
-                                    <li><input type="search" placeholder="Phone"></li>
+                                    <li><input type="text" placeholder="Name" id="name" name="name"></li>
+                                    <li><input type="text" placeholder="Email" id="email" name="email"></li>
+                                    <li><input type="text" placeholder="Phone" id="phone" name="phone"> </li>
                                 </ul>
                                 <div class="btn-50 hv-border text-center">
-                                    <button class="btn bg-clfbb545">
+                                    <button class="btn bg-clfbb545" type="submit">
                                         Enquire Now
                                     </button>
+
                                 </div>
 
                                 <div class="hv-border text-center mt-2">
@@ -452,6 +453,8 @@
                                         </a>
                                     </button>
                                 </div>
+                                <div style="text-align: center; color:white" id="response-message"></div>
+
                             </form>
 
 
@@ -1563,6 +1566,41 @@
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.parallax.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.video.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#contact-form').submit(function(event) {
+                event.preventDefault(); // Prevent form submission
+        
+                // Get form data
+                var formData = {
+                   
+                    name: $('#name').val(),
+                  
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+
+                };
+        
+                // Send AJAX request
+                $.ajax({
+                    type: 'POST',
+                    url: 'homecontact.php',
+                    data: formData,
+                    dataType: 'json',
+                    encode: true
+                })
+                .done(function(response) {
+                    // Display response message
+                    $('#response-message').text(response.message);
+                })
+                .fail(function(response) {
+                    // Display error message
+                    $('#response-message').text('Error occurred while processing the request.');
+                });
+            });
+        });
+        
+            </script>
 </body>
 
 </html>
