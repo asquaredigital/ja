@@ -124,7 +124,7 @@
 
 
     <div class="container w-75 bg-red my-5 py-5">
-        <form action="/submit" method="post">
+        <form id="contact-form" method="post" class="contact-form">
 
             <div class="row">
                 <div class="col-lg-6">
@@ -213,6 +213,8 @@
             <div class="d-flex justify-content-end px-5">
                 <button type="submit" class="btn btn-light">Submit</button>
             </div>
+            <div style="text-align: center; color:white" id="response-message"></div>
+
         </form>
     </div>
 
@@ -250,6 +252,45 @@
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.parallax.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.slideanims.min.js"></script>
     <script src="rev-slider/js/extensions/extensionsrevolution.extension.video.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#contact-form').submit(function(event) {
+                event.preventDefault(); // Prevent form submission
+        
+                // Get form data
+                var formData = {
+                   
+                    name: $('#name').val(),
+                    father_name: $('#father_name').val(),
+                  
+                    email: $('#email').val(),
+                    mobile: $('#mobile').val(),
+
+                    year: $('#year').val(),
+                    marks: $('#position').val(),
+                    address: $('#address').val(),
+                };
+        
+                // Send AJAX request
+                $.ajax({
+                    type: 'POST',
+                    url: 'alumni.php',
+                    data: formData,
+                    dataType: 'json',
+                    encode: true
+                })
+                .done(function(response) {
+                    // Display response message
+                    $('#response-message').text(response.message);
+                })
+                .fail(function(response) {
+                    // Display error message
+                    $('#response-message').text('Error occurred while processing the request.');
+                });
+            });
+        });
+        
+            </script>
 </body>
 
 </html>
