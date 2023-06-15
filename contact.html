@@ -314,7 +314,7 @@
                                             </button>
                                         </div>
                                  </div>
-                                 <div style="text-align: center; color:white" id="response-message"></div>
+                                 <div style="text-align: right; color:white" id="response-message"></div>
 
 
                               
@@ -398,10 +398,14 @@
                 .done(function(response) {
                     // Display response message
                     $('#response-message').text(response.message);
+                    $("#contact-form").trigger("reset");
+
                 })
                 .fail(function(response) {
                     // Display error message
                     $('#response-message').text('Error occurred while processing the request.');
+                    $("#contact-form").trigger("reset");
+
                 });
             });
         });
